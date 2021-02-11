@@ -25,9 +25,9 @@ const Preview = ({ location }) => {
         <div style={{marginTop: "55px"}}>
           Share This Lolly With Your Friend:
         </div>
-        <div style={{marginBottom: "75px"}}><Link to="https://virtual-lolly-12e-bootcamp.netlify.app/preview/*">
+        <div style={{marginBottom: "75px"}}>
           {`https://virtual-lolly-12e-bootcamp.netlify.app/preview/${link}`}
-          </Link></div>
+          </div>
         <div className="main-container">
           <div className="lolly-container">
             <Lolly top={cl1} middle={cl2} bottom={cl3} />
