@@ -25,8 +25,8 @@ const Preview = ({ location }) => {
         <div style={{marginTop: "55px"}}>
           Share This Lolly With Your Friend:
         </div>
-        <div style={{marginBottom: "75px"}}><Link to="https://gifted-yonath-d1c814.netlify.app/preview/${link}">
-          {`https://gifted-yonath-d1c814.netlify.app/preview/${link}`}
+        <div style={{marginBottom: "75px"}}><Link to="https://virtual-lolly-12e-bootcamp.netlify.app/preview/${link}">
+          {`https://virtual-lolly-12e-bootcamp.netlify.app/preview/${link}`}
           </Link></div>
         <div className="main-container">
           <div className="lolly-container">
@@ -43,28 +43,7 @@ const Preview = ({ location }) => {
     )
   }
 
-  return (
-    <div className="App">
-        <h2 style={{color: "purple", letterSpacing: "2px", fontFamily: "cursive", fontStyle: "italic"}}>Virtual Lolly</h2>
-        <div style={{marginTop: "55px"}}>
-          Share This Lolly With Your Friend:
-        </div>
-        <div style={{marginBottom: "75px"}}><Link to="https://gifted-yonath-d1c814.netlify.app/preview/${link}">
-          {`https://gifted-yonath-d1c814.netlify.app/preview/${link}`}
-          </Link></div>
-        <div className="main-container">
-          <div className="lolly-container">
-            <Lolly top={cl1} middle={cl2} bottom={cl3} />
-          </div>
-          <div className="message-container">
-            <p className="to">{`Dear ${to},`}</p>
-            <p className="msg">{msg}</p>
-            <p>From, </p>
-            <p className="from">{from}</p>
-          </div>
-        </div>
-      </div>
-  )
+ 
 }
 
 export default Preview

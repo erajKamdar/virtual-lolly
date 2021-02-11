@@ -22,7 +22,7 @@ module.exports = (data) => `
     <div class="container">
       <header>
         <h1 class="title">
-          <a href="https://gifted-yonath-d1c814.netlify.app/">Virtual Lollies</a>
+          <a href="https://virtual-lolly-12e-bootcamp.netlify.app/">Virtual Lollies</a>
         </h1>
       </header>
       <div class="lolly">
@@ -61,7 +61,7 @@ module.exports = (data) => `
           </svg>
         </div>
         <div class="info">
-          <p class="share">Your Lolly is freezing. Share it with this link: <pre>https://gifted-yonath-d1c814.netlify.app/lolly/${data.link}</pre></p>
+          <p class="share">Your Lolly is freezing. Share it with this link: <pre>https://virtual-lolly-12e-bootcamp.netlify.app/lolly/${data.link}</pre></p>
           <div class="details">
             <p id="recipient" class="recipient">${data.to}</p>
             <div id="message" class="message">${data.msg}</div>
