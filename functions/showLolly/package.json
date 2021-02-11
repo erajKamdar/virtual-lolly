@@ -1,0 +1,17 @@
+{
+  "name": "showlolly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "showLolly.js",
+  "dependencies": {
+    "apollo-server-lambda": "^2.20.0",
+    "dotenv": "^8.2.0",
+    "faunadb": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
