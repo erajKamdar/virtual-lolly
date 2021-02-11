@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-
+import { Link } from 'gatsby';
 //components
 import Lolly from "../components/lolly"
 
@@ -21,13 +21,13 @@ const Preview = ({ location }) => {
 
     return (
       <div className="App">
-        <h2>Virtual Lolly</h2>
-        <div>
-          Your lolly has been created. You can share it by sending this url:
+        <h2 style={{color: "purple", letterSpacing: "2px", fontFamily: "cursive", fontStyle: "italic"}}>Virtual Lolly</h2>
+        <div style={{marginTop: "55px"}}>
+          Share This Lolly With Your Friend:
         </div>
-        <div
-          style={{ border: "1px solid #000", padding: "5px", margin: "1em" }}
-        >{`https://gifted-yonath-d1c814.netlify.app/lolly/${link}`}</div>
+        <div style={{marginBottom: "75px"}}><Link to="https://gifted-yonath-d1c814.netlify.app/preview/${link}">
+          {`https://gifted-yonath-d1c814.netlify.app/preview/${link}`}
+          </Link></div>
         <div className="main-container">
           <div className="lolly-container">
             <Lolly top={cl1} middle={cl2} bottom={cl3} />
@@ -43,7 +43,28 @@ const Preview = ({ location }) => {
     )
   }
 
-  return <div>Preview</div>
+  return (
+    <div className="App">
+        <h2 style={{color: "purple", letterSpacing: "2px", fontFamily: "cursive", fontStyle: "italic"}}>Virtual Lolly</h2>
+        <div style={{marginTop: "55px"}}>
+          Share This Lolly With Your Friend:
+        </div>
+        <div style={{marginBottom: "75px"}}><Link to="https://gifted-yonath-d1c814.netlify.app/preview/${link}">
+          {`https://gifted-yonath-d1c814.netlify.app/preview/${link}`}
+          </Link></div>
+        <div className="main-container">
+          <div className="lolly-container">
+            <Lolly top={cl1} middle={cl2} bottom={cl3} />
+          </div>
+          <div className="message-container">
+            <p className="to">{`Dear ${to},`}</p>
+            <p className="msg">{msg}</p>
+            <p>From, </p>
+            <p className="from">{from}</p>
+          </div>
+        </div>
+      </div>
+  )
 }
 
 export default Preview

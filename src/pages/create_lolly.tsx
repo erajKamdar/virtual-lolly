@@ -34,9 +34,9 @@ const ADD_LOLLY = gql`
 export default function createLolly() {
   const [addLolly, { loading }] = useMutation(ADD_LOLLY)
 
-  const [cl1, setCl1] = React.useState<string>("#ae7d8f")
-  const [cl2, setCl2] = React.useState<string>("#3aef4e")
-  const [cl3, setCl3] = React.useState<string>("#a79c5d")
+  const [cl1, setCl1] = React.useState<string>("plum")
+  const [cl2, setCl2] = React.useState<string>("lightblue")
+  const [cl3, setCl3] = React.useState<string>("rgb(236, 204, 162)")
   const [update, setUpdate] = React.useState(undefined)
 
   const toField = React.useRef(null)
@@ -70,49 +70,45 @@ export default function createLolly() {
   }
 
   if (loading) {
-    return <div>loading</div>
+    return <h1 style={{margin: 'auto', marginTop: "30vh", color: "purple"}}>LOADING.....</h1>
   }
 
   return (
     <div className="App">
-      <h2>Create Lolly</h2>
+      <h2 style={{marginBottom: "15vh", color: 'purple', letterSpacing: "2px",
+      fontStyle: "italic", fontFamily: "cursive"}}>Make Your Own Lolly Here!</h2>
       <div className="main-container">
         <div className="lolly-container">
           <div>
             <Lolly top={cl1} middle={cl2} bottom={cl3} />
           </div>
-          <div>
+          <div style={{display: "flex", flexDirection: "column", alignContent: "center", justifyContent: "center", marginLeft: "55px", marginBottom: "80px"}}>
             <input
               type="color"
               value={cl1}
               onChange={e => setCl1(e.target.value)}
+              style={{border: "0px solid purple", height: "50px", width: "60px", marginBottom: "15px"}}
             />
             <input
               type="color"
               value={cl2}
               onChange={e => setCl2(e.target.value)}
+              style={{border: "0px solid purple", height: "50px", width: "60px", marginBottom: "15px"}}
             />
             <input
               type="color"
               value={cl3}
               onChange={e => setCl3(e.target.value)}
+              style={{border: "0px solid purple", height: "50px", width: "60px"}}
             />
           </div>
         </div>
         <div className="form-container">
-          <input type="text" placeholder="Enter recipient" ref={toField} />
-          <textarea placeholder="Enter your message" ref={msgField} />
-          <input type="text" placeholder="Enter sender name" ref={fromField} />
+          <input type="text" className="input" placeholder="Receiver Name" ref={toField} />
+          <textarea placeholder="Say Something Nice" className="input" ref={msgField} />
+          <input type="text" className="input" placeholder="Your Name" ref={fromField} />
           <button
-            style={{
-              background: "#d72d3b",
-              fontWeight: "bold",
-              color: "white",
-              padding: "5px 10px",
-              textDecoration: "none",
-              borderRadius: "5px",
-              border: "none",
-            }}
+            className="createBtn"
             onClick={handleSubmit}
           >
             Send Lolly

@@ -3,28 +3,58 @@ import { Link } from "gatsby"
 
 import Lolly from "../components/lolly"
 
-import "./styles.css"
+import './styles.css';
 
 export default function App() {
   return (
-    <div>
-      <h1>Virtual Lolly for all!</h1>
-      <h3>Create Virtual Lollies and send to someone</h3>
+    <div className="container">
+      <h1 className="indexHeading">Virtual Lolly</h1>
+      <h3 className="subTitle">Because We All Know Someone Who Deserve Some Sugar</h3>
+     
+     <div className="allLollies">
+     <div className="lollyContainer">
+      <div className="lollies" >
+        <Lolly top="lightblue" bottom="rgb(144, 240, 176)" middle="plum" />
+      </div>
+      <div className="lollies">
+        <Lolly top="lightblue" bottom="rgb(144, 240, 176)" middle="plum" />
+      </div>
+      <div className="lollies">
+        <Lolly top="lightblue" bottom="rgb(144, 240, 176)" middle="plum" />
+      </div>
+</div>
+
+    
+      <div className="lollyContainer">
+      <div className="lollies">
+        <Lolly top="lightgreen" bottom="thistle" middle="pink" />
+      </div>
+      <div className="lollies">
+        <Lolly top="lightgreen" bottom="thistle" middle="pink" />
+      </div>
+      <div className="lollies">
+        <Lolly top="lightgreen" bottom="thistle" middle="pink" />
+      </div>
+      
+      </div>
+      <div className="lollyContainer">
+      <div className="lollies">
+        <Lolly top="papayawhip" bottom="rgb(250, 131, 250)" middle="rgb(200, 247, 130)" />
+      </div>
+      <div className="lollies">
+        <Lolly top="papayawhip" bottom="rgb(250, 131, 250)" middle="rgb(200, 247, 130)" />
+      </div>
+      <div className="lollies">
+        <Lolly top="papayawhip" bottom="rgb(250, 131, 250)" middle="rgb(200, 247, 130)" />
+      </div>
+      
+      </div>
+     </div>
       <Link
-        style={{
-          background: "#e4717a",
-          color: "white",
-          padding: "5px 10px",
-          textDecoration: "none",
-          borderRadius: "5px",
-        }}
         to="/create_lolly"
       >
-        Create new lolly
+        <button className="indexBtn">Make Your Own Lolly</button> 
       </Link>
-      <div style={{ padding: "10px" }}>
-        <Lolly top="#ae7f9c" bottom="#6a6bc2" middle="#77aa8e" />
-      </div>
     </div>
   )
 }

@@ -3,14 +3,75 @@
 body {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  background-color: #f0b1b6;
+  background-color: white;
 }
 
-input,
-textarea {
-  background-color: #f0b1b6;
-  border: 1px solid gray;
-  padding: 5px;
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.subTitle {
+  color: purple;
+  font-family: serif;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.indexBtn {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(250, 202, 250);
+  color: purple;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0px solid rgb(236, 204, 162);
+  box-shadow: 2px 2px 5px purple;
+}
+
+.allLollies {
+  margin: auto;
+  width: 70%;
+  display : flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.lollyContainer {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media (max-width: 550px) {
+  .allLollies {
+    margin: auto;
+    width: 80%;
+    display : flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+
+.lollies {
+  width: 18%;
+
+}
+
+
+.indexHeading {
+  /* margin-top: 50px; */
+  color: purple;
+  font-family: monospace;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+
+input{
+   
 }
 
 .App {
@@ -22,10 +83,13 @@ textarea {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin: auto;
   width: 90%;
+  
 }
 
 .lolly-container {
   margin: auto;
+  background: inherit;
+  display: flex;
 }
 
 .form-container {
@@ -34,19 +98,27 @@ textarea {
   justify-content: space-between;
   /* border: 1px solid #aaa; */
   padding: 1em;
-  background: #e8868e;
-  box-shadow: 1px 3px 3px 4px grey;
+  box-shadow: 3px 3px 8px rgba(250, 207, 250, 0.993);
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.input {
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .message-container {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 1px solid #aaa; */
-  padding: 1em;
-  background: #e8868e;
-  box-shadow: 1px 3px 3px 4px grey;
-  color: white;
+  padding: 1px;
+  background: #fad9dc8c;
+  box-shadow: 3px 3px 8px rgb(246, 117, 246);
+  color: purple;
+  border: 1px solid #f8c2c78c;
+  border-radius: 5px;
 }
 
 .form-container textarea {
@@ -55,6 +127,18 @@ textarea {
 
 .form-container input {
   margin: 1em 0;
+}
+
+.createBtn {
+  padding: 15px;
+  background-color: rgb(250, 202, 250);
+  color: purple;
+  border: 0px;
+  box-shadow: 2px 2px 5px purple;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: serif;
+  
 }
 
 .button7 {
