@@ -42,7 +42,7 @@ const Preview = ({ location }) => {
       </div>
     )
   }
-
+  return <div> PREVIEW </div>
  
 }
 
