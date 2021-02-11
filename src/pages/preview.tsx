@@ -8,7 +8,7 @@ import "./styles.css"
 
 const Preview = ({ location }) => {
   React.useEffect(() => {
-    fetch("https://api.netlify.com/build_hooks/5fca41367968cc0e29eb8ce9", {
+    fetch("https://api.netlify.com/build_hooks/60254a4a06092a276e098b0e", {
       method: "post",
       body: JSON.stringify({}),
     }).then(function (response) {
