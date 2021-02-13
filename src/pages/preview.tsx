@@ -32,10 +32,10 @@ const Preview = ({ location }) => {
             <Lolly top={cl1} middle={cl2} bottom={cl3} />
           </div>
           <div className="message-container">
-            <p className="to">{`Dear ${to},`}</p>
-            <p className="msg">{msg}</p>
+            <p>{`Dear ${to},`}</p>
+            <p>{msg}</p>
             <p>From, </p>
-            <p className="from">{from}</p>
+            <p>{from}</p>
           </div>
         </div>
       </div>
