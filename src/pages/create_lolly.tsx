@@ -34,9 +34,9 @@ const ADD_LOLLY = gql`
 export default function createLolly() {
   const [addLolly, { loading }] = useMutation(ADD_LOLLY)
 
-  const [cl1, setCl1] = React.useState<string>("plum")
-  const [cl2, setCl2] = React.useState<string>("lightblue")
-  const [cl3, setCl3] = React.useState<string>("rgb(236, 204, 162)")
+  const [cl1, setCl1] = React.useState<string>("#dda0dd")
+  const [cl2, setCl2] = React.useState<string>("#add8e6")
+  const [cl3, setCl3] = React.useState<string>("#eccca2")
   const [update, setUpdate] = React.useState(undefined)
 
   const toField = React.useRef(null)
@@ -87,19 +87,21 @@ export default function createLolly() {
               type="color"
               value={cl1}
               onChange={e => setCl1(e.target.value)}
-              style={{border: "0px solid purple", height: "50px", width: "60px", marginBottom: "15px"}}
+              style={{border: "0px solid purple", height: "50px", width: "60px", marginBottom: "15px",
+               marginLeft: '20px'}}
             />
             <input
               type="color"
               value={cl2}
               onChange={e => setCl2(e.target.value)}
-              style={{border: "0px solid purple", height: "50px", width: "60px", marginBottom: "15px"}}
+              style={{border: "0px solid purple", height: "50px", width: "60px", marginBottom: "15px",
+            marginLeft: '20px'}}
             />
             <input
               type="color"
               value={cl3}
               onChange={e => setCl3(e.target.value)}
-              style={{border: "0px solid purple", height: "50px", width: "60px"}}
+              style={{border: "0px solid purple", height: "50px", width: "60px",marginLeft: '20px'}}
             />
           </div>
         </div>

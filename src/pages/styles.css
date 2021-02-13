@@ -26,33 +26,78 @@ body {
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  border: 0px solid rgb(236, 204, 162);
+  border: 0px solid #eccca2;
   box-shadow: 2px 2px 5px purple;
+  transition: all 1s;
 }
-
+.indexBtn:hover{
+  letter-spacing: 5px;
+}
 .allLollies {
   margin: auto;
-  width: 70%;
+  width: 50%;
   display : flex;
   flex-direction: row;
+  justify-content: center;
+  align-content: center;
   margin-top: 40px;
 }
 
 .lollyContainer {
-  width: 30%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 @media (max-width: 550px) {
   .allLollies {
-    margin: auto;
+    margin: 0 auto;
+    width: 50%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+  }
+  .lollies {
+    width: 48%;
+  }
+}
+
+@media (max-width: 800px) {
+  .allLollies {
+    margin: 0 auto;
+    width: 50%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+  }
+  .lollies {
+    width: 50%;
+  }
+}
+/* @media (max-width: 900px) {
+  .allLollies {
+    margin: 0 auto;
     width: 80%;
     display : flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     margin-top: 40px;
   }
-}
+  .lollyContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .lollies {
+    width: 50%;
+  }
+} */
 
 .lollies {
   width: 18%;
@@ -138,13 +183,9 @@ input{
   letter-spacing: 2px;
   font-size: 22px;
   font-family: serif;
-  
+  transition: all 1s;
 }
 
-.button7 {
-  background-color: "#e4717a";
-  color: "white";
-  padding: "5px 10px";
-  text-decoration: "none";
-  border-radius: "5px";
+.createBtn:hover {
+    letter-spacing: 15px;
 }
